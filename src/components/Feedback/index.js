@@ -26,7 +26,7 @@ class Feedback extends Component {
                 <button
                   type="button"
                   className="emoji-btn"
-                  onClick={this.onClickEmojiButton}
+                  onClick={this.onClickEmoji}
                 >
                   <img
                     src={emoji.imageUrl}
@@ -49,12 +49,15 @@ class Feedback extends Component {
     const {loveEmojiUrl} = resources
 
     return (
-      <div className="inner-container">
-        <img src={loveEmojiUrl} alt="love emoji" className="love-emoji" />
-        <h1 className="thank-you-text">Thank You!</h1>
-        <p className="description">
-          We will use your feedback to improve our customer support performance.
-        </p>
+      <div className="first-container-1">
+        <div className="inner-container-1">
+          <img src={loveEmojiUrl} alt="love emoji" className="love-emoji" />
+          <h1 className="thank-you-text">Thank You!</h1>
+          <p className="description">
+            We will use your feedback to improve our customer support
+            performance.
+          </p>
+        </div>
       </div>
     )
   }
